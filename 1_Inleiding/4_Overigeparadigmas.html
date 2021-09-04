@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>1.4 Overige paradigma’s &#8212; Functioneel Elm</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet" />
+  <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.1c5a1a01449ed65a7b51.js">
+
+    <script id="documentation_options" data-url_root="../" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script >
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="2 Recursie" href="../2_Recursie/1_Inleiding.html" />
+    <link rel="prev" title="1.3 Programmeer paradigma’s" href="3_Programmeerparadigmas.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="en" />
+    
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+      
+      <h1 class="site-logo" id="site-title">Functioneel Elm</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../intro.html">
+   Functioneel programmeren - in Elm
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Inleiding
+ </span>
+</p>
+<ul class="current nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="1_Inleiding.html">
+   1 Inleiding
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="2_Paradigmas.html">
+   1.2 Paradigma’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="3_Programmeerparadigmas.html">
+   1.3 Programmeer paradigma’s
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   1.4 Overige paradigma’s
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Recursie
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+   2 Recursie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../2_Recursie/2_Voorbeelden.html">
+   2.2 Voorbeelden
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../2_Recursie/3_Oefenopgaven.html">
+   2.3.1 Vermenigvuldigen
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Basis Elm
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../3_BasisElm/1_EersteElm/1_elm-basis.html">
+   3.1 De basis van Elm
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../3_BasisElm/2_Functie/2_elm-functie-definitie.html">
+   3.2 Functiedefinitie in Elm
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../3_BasisElm/3_List/3_elm-list.html">
+   3.3 Intro Lists
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../3_BasisElm/4_Recursie/4_recursie-in-elm.html">
+   3.4 Recursie in elm
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../3_BasisElm/5_divers/5_elm_diversen.html">
+   3.5 Records
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Toepassingen
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../4_Toepassingen/introductie.html">
+   Introductie
+  </a>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/1_Inleiding/4_Overigeparadigmas.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/eelcodijkstra/functioneelelm"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/eelcodijkstra/functioneelelm/issues/new?title=Issue%20on%20page%20%2F1_Inleiding/4_Overigeparadigmas.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#parallel-gedistribueerd-programmeren">
+   Parallel / gedistribueerd programmeren
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#event-driven-programmeren">
+   Event driven programmeren
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#reactief-programmeren">
+   Reactief programmeren
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hybride-omgevingen">
+   Hybride omgevingen
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+        
+              <div>
+                
+  <div class="section" id="overige-paradigma-s">
+<h1>1.4 Overige paradigma’s<a class="headerlink" href="#overige-paradigma-s" title="Permalink to this headline">¶</a></h1>
+<p>Zoals in het begin van het vorige hoofdstuk is gezegd, worden in deze syllabus de meest gangbare paradigma’s besproken. De paradigma’s die hier zijn beschreven zijn niet per definitie de enige programmeerparadigma’s. Om verschillende redenen kunnen ook andere benaderingen worden genoemd als programmeerparadigma’s. Ieder ander paradigma zal weer speciale eigenschappen hebben en geschikt zijn voor ontwikkelen van software voor bijzondere specifieke problematiek. Hieronder worden slechts enkele voorbeelden genoemd van andere programmeerparadigma’s.</p>
+<div class="section" id="parallel-gedistribueerd-programmeren">
+<h2>Parallel / gedistribueerd programmeren<a class="headerlink" href="#parallel-gedistribueerd-programmeren" title="Permalink to this headline">¶</a></h2>
+<p>Het is mogelijk dat verschillende taken binnen een systeem gelijktijdig worden uitgevoerd (in plaats van strikt achtereenvolgens). Het optimaal gebruik van deze mogelijkheid vraagt om een benadering waarin bij de opdeling van opdrachten nadrukkelijk rekening wordt gehouden met de afhankelijkheden en onafhankelijkheden van stukken code. Deze benadering zou je als ‘parallel programmeren’ of ‘’ gedistribueerd’ kunnen duiden. Hierbij moet bijvoorbeeld nadrukkelijk rekening worden gehouden met wederzijdse uitsluiting van taken die op zich wel gelijktijdig kunnen worden uitgevoerd, maar voor het benaderen van bepaalde bronnen (zoals geheugenruimte, of het aansturen van bepaalde componenten) elkaar wederzijds uitsluiten. Hierbij krijg je onder meer te maken met begrippen als atomiciteit en synchronisatie.</p>
+</div>
+<div class="section" id="event-driven-programmeren">
+<h2>Event driven programmeren<a class="headerlink" href="#event-driven-programmeren" title="Permalink to this headline">¶</a></h2>
+<p>In traditionele omgevingen waarin gebruik werd gemaakt van tekst gebaseerde gebruikersinterfaces, werd vooral lineair ontwikkeld. In een andere manier van programmeren worden bepaalde stukken code uitgevoerd als reactie op een bepaalde gebeurtenis (‘event driven programmeren’). Het kan hierbij bijvoorbeeld gaan om een gebeurtenis in de gebruikersinterace (bijvoorbeeld een knop wordt ingedrukt, of de cursor die ergens overheen beweegt). Binnen gamesdesign ligt het ook voor de hand om event driven te ontwikkelen. Denk hierbij bijvoorbeeld aan wat er moet gebeuren als een voorwerp in een game botst met (wordt geraakt door) een ander voorwerp.
+Ontwikkelomgevingen waarin het mogelijk is om event driven te programmeren moeten beschikken over een mechanisme waarmee voortdurend wordt gecontroleerd welke gebeurtenissen er plaats vinden (event listeners / event handlers).</p>
+</div>
+<div class="section" id="reactief-programmeren">
+<h2>Reactief programmeren<a class="headerlink" href="#reactief-programmeren" title="Permalink to this headline">¶</a></h2>
+<p>Reactief programmeren is een programmeerparadigma dat zich richt op datastromen en de verspreiding van de verandering. Omgevingen voor reactief programmeren ondersteunen optimaal het doorvoeren van wijzigingen in een omgeving met statische of dynamische gegevens. Een modern spreadsheetprogramma is een voorbeeld van reactieve programmeeromgeving. Spreadsheetcellen kunnen letterlijke waarden bevatten, maar ook formules zoals “= B1 + C1”.  De cellen met formules worden geëvalueerd op basis van de waarden in de andere cellen. Wanneer de waarde van een cel wordt gewijzigd, wordt de waarde van alle cellen met formules waarin wordt verwezen naar de gewijzigde cel automatisch bijgewerkt.</p>
+</div>
+<div class="section" id="hybride-omgevingen">
+<h2>Hybride omgevingen<a class="headerlink" href="#hybride-omgevingen" title="Permalink to this headline">¶</a></h2>
+<p>In de meeste gevallen wordt een systeem niet ontwikkeld volgens één paradigma, maar wordt gebruik gemaakt van de kenmerken van de verschillende paradigma’s door elkaar (een hybride benadering). Veel programmeertalen bieden dan ook ondersteuning aan de verschillende paradigma’s.</p>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./1_Inleiding"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+        
+        <div class='prev-next-bottom'>
+            
+    <a class='left-prev' id="prev-link" href="3_Programmeerparadigmas.html" title="previous page">1.3 Programmeer paradigma’s</a>
+    <a class='right-next' id="next-link" href="../2_Recursie/1_Inleiding.html" title="next page">2 Recursie</a>
+
+        </div>
+        
+        </div>
+    </div>
+    <footer class="footer mt-5 mt-md-0">
+    <div class="container">
+      <p>
+        
+          By Coen Crombach et.al.<br/>
+        
+            &copy; Copyright 2021.<br/>
+      </p>
+    </div>
+  </footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.1c5a1a01449ed65a7b51.js"></script>
+
+  
+  </body>
+</html>
