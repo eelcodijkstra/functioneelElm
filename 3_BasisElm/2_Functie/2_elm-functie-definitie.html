@@ -455,7 +455,8 @@ fibo 38.</p>
 <div class="section" id="tweedegraads-vergelijking">
 <h1>Tweedegraads vergelijking<a class="headerlink" href="#tweedegraads-vergelijking" title="Permalink to this headline">¶</a></h1>
 <p>Zoals je bij wiskunde hebt geleerd kun je de zogenaamde tweedegraads vergelijking:</p>
-<p><span class="math notranslate nohighlight">\(ax^2 + bx + c = 0\)</span></p>
+<div class="math notranslate nohighlight">
+\[ ax^2 + bx + c = 0 \]</div>
 <p>oplossen door allereerst de discriminant <span class="math notranslate nohighlight">\(D = b^2 - 4ac\)</span> uit te rekenen.
 Als <span class="math notranslate nohighlight">\(D &lt; 0\)</span> is is er geen reële oplossing, als <span class="math notranslate nohighlight">\(D \geq 0\)</span> zijn er 2 oplossingen
 (die voor <span class="math notranslate nohighlight">\(D=0\)</span> aan elkaar gelijk zijn).</p>
@@ -475,7 +476,7 @@ de discriminant berekent:</p>
 </div>
 <p>Voor de leesbaarheid is het goed hier de haakjes te zetten!</p>
 <p>Zou <span class="math notranslate nohighlight">\(38x^2 + 12x + 6\)</span> oplossingen hebben?</p>
-<p>Vraag het elm met behulp van de aanroep:</p>
+<p>Vraag het Elm met behulp van de aanroep:</p>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
 <div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">discriminant</span> <span class="mi">38</span> <span class="mi">12</span> <span class="mi">6</span>
@@ -491,7 +492,7 @@ de discriminant berekent:</p>
 <p>Als het antwoord groter dan 0 is zijn er 2
 verschillende oplossingen voor x, als het antwoord 0 is is er 1 oplossing en als
 het antwoord begint met een - is er geen (reële) oplossing.</p>
-<p>Merk op dat elm de discriminant ziet als een functie van het type</p>
+<p>Merk op dat Elm de discriminant ziet als een functie van het type</p>
 <p><code class="docutils literal notranslate"><span class="pre">number</span> <span class="pre">-&gt;</span> <span class="pre">number</span> <span class="pre">-&gt;</span> <span class="pre">number</span> <span class="pre">-&gt;</span> <span class="pre">number</span></code></p>
 <p>wat wil zeggen dat de functie achtereenvolgens 3 parameters verwacht!
 Het is dus mogelijk voor tweedegraads vergelijkingen waarbij er géén getal
