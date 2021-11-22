@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Introductie &#8212; Functioneel Elm</title>
+    <title>Elm toepassingen &#8212; Functioneel Elm</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,7 +42,7 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -51,6 +51,7 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Elm programma’s" href="elm-programmas.html" />
     <link rel="prev" title="3.5 Records" href="../3_BasisElm/5_divers/5_elm-diversen.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -71,18 +72,19 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Functioneel Elm</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Functioneel programmeren - in Elm
+   Module Functioneel Programmeren
   </a>
  </li>
 </ul>
@@ -104,7 +106,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../1_Inleiding/3_Programmeerparadigmas.html">
-   1.3 Programmeer paradigma’s
+   1.3 Programmeerparadigma’s
   </a>
  </li>
  <li class="toctree-l1">
@@ -120,8 +122,13 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+  <a class="reference internal" href="../2_Recursie/Recursie.html">
    2 Recursie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+   2.1 Inleiding recursie
   </a>
  </li>
  <li class="toctree-l1">
@@ -131,7 +138,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../2_Recursie/3_Oefenopgaven.html">
-   2.3.1 Vermenigvuldigen
+   2.3 Oefenopgaven
   </a>
  </li>
 </ul>
@@ -175,7 +182,93 @@
 <ul class="current nav bd-sidenav">
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   Introductie
+   Elm toepassingen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="elm-programmas.html">
+   Elm programma’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="havo2018-natuurkunde-repl.html">
+   Havo-examen natuurkunde 2018
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="polynoom.html">
+   Polynomen tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poly-functions.html">
+     De polynoom-functies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="funcpoints.html">
+     Lijst met functiepunten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poly-draw.html">
+     Polynoom-tekenprogramma
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="boxplot.html">
+   Boxplot tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="myboxplotdata.html">
+     Functie boxplotdata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="myboxplotdraw.html">
+     Boxplotdraw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mymergesort.html">
+     Mergesort
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ijskristallen.html">
+   IJskristallen
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Bronnenlijst.html">
+   Bronnenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hoe-gebruik-je-jupyter.html">
+   Hoe gebruik je Jupyter?
   </a>
  </li>
 </ul>
@@ -219,9 +312,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/4_Toepassingen/introductie.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/4_Toepassingen/introductie.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -255,6 +348,23 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/eelcodijkstra/functioneelelm/master?urlpath=tree/notebooks/4_Toepassingen/introductie.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -263,16 +373,11 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#deze-toepassingen-zijn">
-   Deze toepassingen zijn
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#deze-examens-zijn">
-   Deze examens zijn
+  <a class="reference internal nav-link" href="#introductie">
+   Introductie
   </a>
  </li>
 </ul>
@@ -286,22 +391,20 @@
         
               <div>
                 
-  <div class="section" id="introductie">
-<h1>Introductie<a class="headerlink" href="#introductie" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="elm-toepassingen">
+<h1>Elm toepassingen<a class="headerlink" href="#elm-toepassingen" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="introductie">
+<h2>Introductie<a class="headerlink" href="#introductie" title="Permalink to this headline">¶</a></h2>
 <p>Als afsluiting van de module programmeerparadigma’s met Elm gaan we drie Toepassingen programmeren die te maken hebben met wat jullie bij wiskunde geleerd hebben.</p>
-<div class="section" id="deze-toepassingen-zijn">
-<h2>Deze toepassingen zijn<a class="headerlink" href="#deze-toepassingen-zijn" title="Permalink to this headline">¶</a></h2>
+<p>Deze toepassingen zijn:</p>
 <ul class="simple">
 <li><p><a class="reference internal" href="polynoom.html"><span class="doc std std-doc">Een programma om grafiek van een polynoom af te drukken</span></a></p></li>
 <li><p><a class="reference internal" href="boxplot.html"><span class="doc std std-doc">Een programma om een boxplot af te drukken</span></a></p></li>
 <li><p><a class="reference internal" href="ijskristallen.html"><span class="doc std std-doc">Een programma om ijskristallen te tekenen</span></a></p></li>
 </ul>
 <p>Als afsluiting kun je ook een aantal Algemene Uitwerkingen van Examens uit Examenblad maken</p>
-</div>
-<div class="section" id="deze-examens-zijn">
-<h2>Deze examens zijn<a class="headerlink" href="#deze-examens-zijn" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p><a class="reference internal" href="havo2018_natuurkunde.html"><span class="doc std std-doc">Havo2018 Natuurkunde</span></a></p></li>
+<li><p><a class="reference internal" href="havo2018-natuurkunde-repl.html"><span class="doc std std-doc">Havo2018 Natuurkunde</span></a></p></li>
 </ul>
 </div>
 </div>
@@ -315,29 +418,50 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "elm"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "elm",
             path: "./4_Toepassingen"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'elm'</script>
 
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../3_BasisElm/5_divers/5_elm-diversen.html" title="previous page">3.5 Records</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../3_BasisElm/5_divers/5_elm-diversen.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">3.5 Records</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="elm-programmas.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Elm programma’s</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

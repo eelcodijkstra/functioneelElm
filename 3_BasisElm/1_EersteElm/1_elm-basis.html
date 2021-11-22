@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -42,7 +42,7 @@
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -52,7 +52,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="3.2 Functiedefinitie in Elm" href="../2_Functie/2_elm-functie-definitie.html" />
-    <link rel="prev" title="2.3.1 Vermenigvuldigen" href="../../2_Recursie/3_Oefenopgaven.html" />
+    <link rel="prev" title="2.3 Oefenopgaven" href="../../2_Recursie/3_Oefenopgaven.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -72,18 +72,19 @@
     <a class="navbar-brand text-wrap" href="../../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Functioneel Elm</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../intro.html">
-   Functioneel programmeren - in Elm
+   Module Functioneel Programmeren
   </a>
  </li>
 </ul>
@@ -105,7 +106,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../1_Inleiding/3_Programmeerparadigmas.html">
-   1.3 Programmeer paradigma’s
+   1.3 Programmeerparadigma’s
   </a>
  </li>
  <li class="toctree-l1">
@@ -121,8 +122,13 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../2_Recursie/1_Inleiding.html">
+  <a class="reference internal" href="../../2_Recursie/Recursie.html">
    2 Recursie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../2_Recursie/1_Inleiding.html">
+   2.1 Inleiding recursie
   </a>
  </li>
  <li class="toctree-l1">
@@ -132,7 +138,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../2_Recursie/3_Oefenopgaven.html">
-   2.3.1 Vermenigvuldigen
+   2.3 Oefenopgaven
   </a>
  </li>
 </ul>
@@ -176,7 +182,93 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../4_Toepassingen/introductie.html">
-   Introductie
+   Elm toepassingen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../4_Toepassingen/elm-programmas.html">
+   Elm programma’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../4_Toepassingen/havo2018-natuurkunde-repl.html">
+   Havo-examen natuurkunde 2018
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../4_Toepassingen/polynoom.html">
+   Polynomen tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/poly-functions.html">
+     De polynoom-functies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/funcpoints.html">
+     Lijst met functiepunten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/poly-draw.html">
+     Polynoom-tekenprogramma
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../4_Toepassingen/boxplot.html">
+   Boxplot tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/myboxplotdata.html">
+     Functie boxplotdata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/myboxplotdraw.html">
+     Boxplotdraw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/mymergesort.html">
+     Mergesort
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../4_Toepassingen/ijskristallen.html">
+   IJskristallen
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Bronnenlijst.html">
+   Bronnenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../hoe-gebruik-je-jupyter.html">
+   Hoe gebruik je Jupyter?
   </a>
  </li>
 </ul>
@@ -281,7 +373,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#het-type-string">
@@ -299,7 +391,7 @@
         
               <div>
                 
-  <div class="section" id="de-basis-van-elm">
+  <div class="tex2jax_ignore mathjax_ignore section" id="de-basis-van-elm">
 <h1>3.1 De basis van Elm<a class="headerlink" href="#de-basis-van-elm" title="Permalink to this headline">¶</a></h1>
 <p>De code snippets in dit hoofdstuk zijn Elm commando’s die op de Elm command line (de zogenaamde ‘elm REPL’) uitgevoerd kunnen worden, maar wij zullen de Elm commando’s door Jupyter laten uitvoeren vanuit dit Jupyter notebook:
 dat doe je door op ‘run’ te drukken als je dit notebook in Jupyter open hebt.</p>
@@ -324,7 +416,7 @@ REPL staat voor … (google hier eens op). Daar kun je dan een commando intypen 
 <blockquote>
 <div><p>Je kunt de inhoud van een code-cell zelf aanpassen en de berekening opnieuw uitvoeren (Run). Probeer dit!</p>
 </div></blockquote>
-<p>Iets spannender (denk even na of je het antwoord van deze vermeningvuldiging
+<p>Iets spannender (denk even na of je het antwoord van deze vermenigvuldiging
 makkelijk zelf zou kunnen berekenen): bereken 42 maal 38</p>
 <p>Selecteer de regel hieronder en druk op Shift-Enter (of gebruik weer Run).</p>
 <div class="cell docutils container">
@@ -435,7 +527,7 @@ Dit lijkt op wat een variabele in de wiskunde betekent, maar is niet helemaal he
 </div>
 <p>en vergelijk het resultaat eens met de uitkomst die je eerder kreeg met <code class="docutils literal notranslate"><span class="pre">42</span> <span class="pre">*</span> <span class="pre">38</span></code>. Wat valt je op?
 Juist: er staat nu <code class="docutils literal notranslate"><span class="pre">String</span></code> achter in plaats van <code class="docutils literal notranslate"><span class="pre">number</span></code>. Dat komt omdat de uitkomst van de vermenigvuldiging in de functie ‘String.fromInt’ wordt gestopt, en die maakt er een string van. Een string is een <em>ketting</em> van <em>characters</em> (zeg maar letters, maar bijvoorbeeld een <em>spatie</em>, een <em>komma</em>, een punt en een <em>tab</em> tellen dan ook als character, dus het zijn niet alleen maar de letters uit het alfabet).</p>
-<p>Het woord <em>functie</em> is gevallen. In elm struikel je al heel snel over de functies: bijna alles wordt met functies gedaan.
+<p>Het woord <em>functie</em> is gevallen. In Elm struikel je al heel snel over de functies: bijna alles wordt met functies gedaan.
 Je kunt bestaande functies aanroepen, maar ook eigen functies definiëren.
 In het volgende hoofdstuk gaan we verder in op functies.</p>
 </div>
@@ -464,16 +556,36 @@ In het volgende hoofdstuk gaan we verder in op functies.</p>
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../../2_Recursie/3_Oefenopgaven.html" title="previous page">2.3.1 Vermenigvuldigen</a>
-    <a class='right-next' id="next-link" href="../2_Functie/2_elm-functie-definitie.html" title="next page">3.2 Functiedefinitie in Elm</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../../2_Recursie/3_Oefenopgaven.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">2.3 Oefenopgaven</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../2_Functie/2_elm-functie-definitie.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">3.2 Functiedefinitie in Elm</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>&lt;no title&gt; &#8212; Functioneel Elm</title>
+    <title>Functie boxplotdata &#8212; Functioneel Elm</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,7 +42,9 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/latest.js?config=TeX-AMS-MML_HTMLorMML"></script>
+    <script type="text/x-mathjax-config">MathJax.Hub.Config({"tex2jax": {"processClass": "tex2jax_process|mathjax_process|math|output_area"}})</script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -51,6 +53,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Boxplotdraw" href="myboxplotdraw.html" />
+    <link rel="prev" title="Boxplot tekenen" href="boxplot.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -70,18 +74,19 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Functioneel Elm</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Functioneel programmeren - in Elm
+   Module Functioneel Programmeren
   </a>
  </li>
 </ul>
@@ -103,7 +108,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../1_Inleiding/3_Programmeerparadigmas.html">
-   1.3 Programmeer paradigma’s
+   1.3 Programmeerparadigma’s
   </a>
  </li>
  <li class="toctree-l1">
@@ -119,8 +124,13 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+  <a class="reference internal" href="../2_Recursie/Recursie.html">
    2 Recursie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+   2.1 Inleiding recursie
   </a>
  </li>
  <li class="toctree-l1">
@@ -130,7 +140,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../2_Recursie/3_Oefenopgaven.html">
-   2.3.1 Vermenigvuldigen
+   2.3 Oefenopgaven
   </a>
  </li>
 </ul>
@@ -171,10 +181,96 @@
   Toepassingen
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="introductie.html">
-   Introductie
+   Elm toepassingen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="elm-programmas.html">
+   Elm programma’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="havo2018-natuurkunde-repl.html">
+   Havo-examen natuurkunde 2018
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="polynoom.html">
+   Polynomen tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poly-functions.html">
+     De polynoom-functies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="funcpoints.html">
+     Lijst met functiepunten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poly-draw.html">
+     Polynoom-tekenprogramma
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="boxplot.html">
+   Boxplot tekenen
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Functie boxplotdata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="myboxplotdraw.html">
+     Boxplotdraw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mymergesort.html">
+     Mergesort
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ijskristallen.html">
+   IJskristallen
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Bronnenlijst.html">
+   Bronnenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hoe-gebruik-je-jupyter.html">
+   Hoe gebruik je Jupyter?
   </a>
  </li>
 </ul>
@@ -218,9 +314,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/4_Toepassingen/myboxplotdata.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/4_Toepassingen/myboxplotdata.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -254,19 +350,28 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/eelcodijkstra/functioneelelm/master?urlpath=tree/notebooks/4_Toepassingen/myboxplotdata.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
         <div class="d-none d-md-block col-md-2 bd-toc show">
             
-            <div class="tocsection onthispage pt-5 pb-3">
-                <i class="fas fa-list"></i> Contents
-            </div>
-            <nav id="bd-toc-nav">
-                <ul class="simple visible nav section-nav flex-column">
-</ul>
-
-            </nav>
         </div>
     </div>
 </div>
@@ -275,125 +380,437 @@
         
               <div>
                 
-  <p>Je gaat een functie <strong>boxplotdata</strong> maken.&nbsp; Deze functie <strong>boxplotdata</strong> heeft als invoer een String met getallen gescheiden door komma&rsquo;s en als uitvoer&nbsp; een List van Floats met getallen gescheiden door komma&rsquo;s op basis waarvan je een boxplot kunt tekenen. &nbsp;Je gebruikt de functie <strong>boxplotdata </strong>later om&nbsp; een boxplot te tekenen.</p>
-<p>Start het elm programma <a href="http://goloca.org:443/examples/boxplotdata.elm">boxplotdata.elm</a>. Vul in het vakje links boven het volgende in:</p>
-<p>7,3,8,6,8,5,4,5,3,6,2,6,9,1,2,7,5,8,7,6</p>
-<p>Als uitkomst zie je nu een lijst met de gegevens voor de boxplot. Hierin staan achtereenvolgens:</p>
-<ul>
-	<li>kleinste getal</li>
-	<li>eerste quartiel</li>
-	<li>tweede quartiel (mediaan)</li>
-	<li>derde quartiel</li>
-	<li>grootste getal</li>
+  <div class="tex2jax_ignore mathjax_ignore section" id="functie-boxplotdata">
+<h1>Functie boxplotdata<a class="headerlink" href="#functie-boxplotdata" title="Permalink to this headline">¶</a></h1>
+<p>Je gaat een functie <code class="docutils literal notranslate"><span class="pre">boxplotdata</span> <span class="pre">lst</span></code> maken, met als resultaat een lijst van 5 getallen betreffende de lijst <code class="docutils literal notranslate"><span class="pre">lst</span></code>, achtereenvolgens:</p>
+<ul class="simple">
+<li><p>kleinste getal van <code class="docutils literal notranslate"><span class="pre">lst</span></code></p></li>
+<li><p>eerste kwartiel</p></li>
+<li><p>tweede kwartiel (mediaan) van <code class="docutils literal notranslate"><span class="pre">lst</span></code></p></li>
+<li><p>derde kwartiel</p></li>
+<li><p>grootste getal van <code class="docutils literal notranslate"><span class="pre">lst</span></code></p></li>
 </ul>
-<p>Run het elm programma <strong>myboxplotdata.elm</strong> in de volgende cell. Elm geeft als foutmelding dat de functie <strong>boxplotdata</strong> ontbreekt. Dat klopt want dat is nu juist de functie die je zelf moet schrijven.</p>
-<p>Voeg de functie <strong>boxplotdata &nbsp;</strong>toe aan <strong>myboxplotdata.elm</strong>. Deze functie <strong>boxplotdata</strong> heeft als invoer een String en als uitvoer een&nbsp; lijst van Floats op basis waarvan je een boxplot kunt tekenen. In deze lijst staan achtereenvolgens het kleinste getal, het eerste kwartiel, het tweede kwartiel(mediaan), het derde kwartiel en het grootste getal.</p>
-<p>Je kunt dit als volgt aanpakken.&nbsp; Maak met split een lijst van de String die je als invoer krijgt. Zet deze lijst van Strings om naar een lijst van Floats en sorteer deze lijst. Maak van deze lijst een Array. Je kunt nu op basis van dit Array de kleinste een de grootste bepalen. Schrijf aparte functies om op basis van het Array het eerste, tweede en derde kwartiel te bepalen.&nbsp; Zet de resultaten in een lijst van Floats en geef deze terug.</p>
-<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kn">import </span><span class="nc">Html</span> <span class="nv">exposing</span> <span class="p">(</span><span class="nv">text</span><span class="p">,</span> <span class="nv">div</span><span class="p">,</span> <span class="nv">input</span><span class="p">,</span> <span class="kt">Attribute</span><span class="p">)</span>
-<span class="kn">import </span><span class="nc">Html</span> <span class="nv">exposing</span> <span class="p">(</span><span class="nv">beginnerProgram</span><span class="p">)</span>
-<span class="kn">import </span><span class="nc">Html.Events</span> <span class="nv">exposing</span> <span class="p">(</span><span class="nv">on</span><span class="p">,</span> <span class="nv">keyCode</span><span class="p">,</span> <span class="nv">onInput</span><span class="p">)</span>
-<span class="kn">import </span><span class="nc">Json.Decode</span> <span class="kr">as</span> <span class="kt">Json</span>
-<span class="kn">import </span><span class="nc">String</span> <span class="nv">exposing</span><span class="nf">(..)</span>
-<span class="kn">import </span><span class="nc">List</span> <span class="nv">exposing</span><span class="nf">(..)</span>
-<span class="kn">import </span><span class="nc">Array</span> <span class="nv">exposing</span><span class="nf">(..)</span>
-<span class="kn">import </span><span class="nc">Maybe</span> <span class="nv">exposing</span><span class="nf">(..)</span>
-
-<span class="nv">checkedStringToFloat</span> <span class="nf">:</span> <span class="kt">String</span> <span class="nf">-&gt;</span> <span class="kt">Float</span>
-<span class="nv">checkedStringToFloat</span> <span class="nv">s</span> <span class="nf">=</span>
-    <span class="kt">Result</span><span class="nf">.</span><span class="nv">withDefault</span> <span class="mi">0</span> <span class="p">(</span><span class="kt">String</span><span class="nf">.</span><span class="nv">toFloat</span> <span class="nv">s</span><span class="p">)</span>
-
-<span class="nv">listStringToListFloat</span> <span class="nf">:</span> <span class="kt">List</span> <span class="kt">String</span> <span class="nf">-&gt;</span> <span class="kt">List</span> <span class="kt">Float</span>
-<span class="nv">listStringToListFloat</span> <span class="nv">ls</span> <span class="nf">=</span>
-    <span class="kt">List</span><span class="nf">.</span><span class="nv">map</span> <span class="nv">checkedStringToFloat</span> <span class="nv">ls</span>
-
-<span class="nv">mergesort</span> <span class="nf">:</span> <span class="kt">List</span> <span class="nv">comparable</span> <span class="nf">-&gt;</span> <span class="kt">List</span> <span class="nv">comparable</span>
-<span class="nv">mergesort</span> <span class="nv">list</span> <span class="nf">=</span>
-  <span class="kr">case</span> <span class="nv">list</span> <span class="kr">of</span>
-    <span class="p">[]</span> <span class="nf">-&gt;</span>
-        <span class="nv">list</span>
-
-    <span class="p">[</span><span class="nv">_</span><span class="p">]</span> <span class="nf">-&gt;</span>
-        <span class="nv">list</span>
-
-    <span class="nv">_</span> <span class="nf">-&gt;</span>
-        <span class="kr">let</span>
-          <span class="p">(</span><span class="nv">xs</span><span class="p">,</span> <span class="nv">ys</span><span class="p">)</span> <span class="nf">=</span> <span class="nv">divide</span> <span class="nv">list</span>
-        <span class="kr">in</span>
-          <span class="nv">merge</span> <span class="p">(</span><span class="nv">mergesort</span> <span class="nv">xs</span><span class="p">)</span> <span class="p">(</span><span class="nv">mergesort</span> <span class="nv">ys</span><span class="p">)</span>
-<span class="nv">divide</span> <span class="nf">:</span> <span class="kt">List</span> <span class="nv">a</span> <span class="nf">-&gt;</span> <span class="p">(</span><span class="kt">List</span> <span class="nv">a</span><span class="p">,</span> <span class="kt">List</span> <span class="nv">a</span><span class="p">)</span>
-<span class="nv">divide</span> <span class="nv">list</span> <span class="nf">=</span>
-  <span class="kr">case</span> <span class="nv">list</span> <span class="kr">of</span>
-    <span class="p">[]</span> <span class="nf">-&gt;</span>
-        <span class="p">([],</span> <span class="p">[])</span>
-
-    <span class="nv">x</span> <span class="nf">::</span> <span class="nv">rest</span> <span class="nf">-&gt;</span>
-        <span class="kr">let</span>
-          <span class="p">(</span><span class="nv">xs</span><span class="p">,</span> <span class="nv">ys</span><span class="p">)</span> <span class="nf">=</span> <span class="nv">divide</span> <span class="nv">rest</span>
-        <span class="kr">in</span>
-          <span class="p">(</span><span class="nv">ys</span><span class="p">,</span> <span class="nv">x</span> <span class="nf">::</span> <span class="nv">xs</span><span class="p">)</span>
-
-<span class="nv">merge</span> <span class="nf">:</span> <span class="kt">List</span> <span class="nv">comparable</span> <span class="nf">-&gt;</span> <span class="kt">List</span> <span class="nv">comparable</span> <span class="nf">-&gt;</span> <span class="kt">List</span> <span class="nv">comparable</span>
-<span class="nv">merge</span> <span class="nv">xs</span> <span class="nv">ys</span> <span class="nf">=</span>
-  <span class="kr">case</span> <span class="p">(</span><span class="nv">xs</span><span class="p">,</span> <span class="nv">ys</span><span class="p">)</span> <span class="kr">of</span>
-    <span class="p">(</span><span class="nv">x</span> <span class="nf">::</span> <span class="nv">xBack</span><span class="p">,</span> <span class="nv">y</span> <span class="nf">::</span> <span class="nv">yBack</span><span class="p">)</span> <span class="nf">-&gt;</span>
-        <span class="kr">if</span> <span class="nv">x</span> <span class="nf">&lt;</span> <span class="nv">y</span> <span class="kr">then</span>
-          <span class="nv">x</span> <span class="nf">::</span> <span class="nv">merge</span> <span class="nv">xBack</span> <span class="nv">ys</span>
-        <span class="kr">else</span>
-          <span class="nv">y</span> <span class="nf">::</span> <span class="nv">merge</span> <span class="nv">xs</span> <span class="nv">yBack</span>
-
-    <span class="p">([],</span> <span class="nv">rest</span><span class="p">)</span> <span class="nf">-&gt;</span>
-        <span class="nv">rest</span>
-
-    <span class="p">(</span><span class="nv">rest</span><span class="p">,</span> <span class="p">[])</span> <span class="nf">-&gt;</span>
-        <span class="nv">rest</span>
-
-<span class="kr">main </span><span class="nf">=</span>
-  <span class="nv">beginnerProgram</span> 
-  <span class="p">{</span> <span class="nv">model</span> <span class="nf">=</span> 
-    <span class="p">{</span> <span class="nv">outputData</span> <span class="nf">=</span> <span class="p">[]</span>
-    <span class="p">,</span> <span class="nv">inputData</span> <span class="nf">=</span> <span class="s">&quot;&quot;</span>
-    <span class="p">}</span>
-  <span class="p">,</span> <span class="nv">view</span> <span class="nf">=</span> <span class="nv">view</span>
-  <span class="p">,</span> <span class="nv">update</span> <span class="nf">=</span> <span class="nv">update</span>
-  <span class="p">}</span>
-
-
-<span class="nv">view</span> <span class="nv">model</span> <span class="nf">=</span>
-    <span class="nv">div</span> <span class="p">[]</span> 
-    <span class="p">[</span> <span class="nv">input</span> <span class="p">[</span><span class="nv">onKeyDown</span> <span class="kt">KeyDown</span><span class="p">,</span> <span class="nv">onInput</span> <span class="kt">Input</span><span class="p">]</span> <span class="p">[]</span>
-    <span class="p">,</span> <span class="nv">div</span> <span class="p">[]</span> <span class="p">[</span> <span class="nv">text</span> <span class="p">(</span><span class="nv">toString</span> <span class="nv">model</span><span class="nf">.</span><span class="nv">outputData</span><span class="p">)</span> <span class="p">]</span>
-    <span class="p">]</span>
-
-<span class="nv">onKeyDown</span> <span class="nf">:</span> <span class="p">(</span><span class="kt">Int</span> <span class="nf">-&gt;</span> <span class="nv">msg</span><span class="p">)</span> <span class="nf">-&gt;</span> <span class="kt">Html</span><span class="nf">.</span><span class="kt">Attribute</span> <span class="nv">msg</span>
-<span class="nv">onKeyDown</span> <span class="nv">tagger</span> <span class="nf">=</span>
-  <span class="nv">on</span> <span class="s">&quot;keydown&quot;</span> <span class="p">(</span><span class="kt">Json</span><span class="nf">.</span><span class="nv">map</span> <span class="nv">tagger</span> <span class="nv">keyCode</span><span class="p">)</span>
-
-<span class="kr">type</span> <span class="kt">Msg</span> 
-  <span class="nf">=</span> <span class="kt">NoOp</span>
-  <span class="nf">|</span> <span class="kt">KeyDown</span> <span class="kt">Int</span>
-  <span class="nf">|</span> <span class="kt">Input</span> <span class="kt">String</span>
-
-
-<span class="nv">update</span> <span class="nv">msg</span> <span class="nv">model</span> <span class="nf">=</span>
-  <span class="kr">case</span> <span class="nv">msg</span> <span class="kr">of</span>
-
-    <span class="kt">NoOp</span> <span class="nf">-&gt;</span>
-      <span class="nv">model</span>
-
-    <span class="kt">KeyDown</span> <span class="nv">key</span> <span class="nf">-&gt;</span>
-      <span class="kr">if</span> <span class="nv">key</span> <span class="nf">==</span> <span class="mi">13</span> <span class="kr">then</span>
-        <span class="p">{</span> <span class="nv">model</span> <span class="nf">|</span> <span class="nv">outputData</span> <span class="nf">=</span> <span class="nv">boxplotdata</span> <span class="nv">model</span><span class="nf">.</span><span class="nv">inputData</span> <span class="p">}</span>
-      <span class="kr">else</span>
-        <span class="nv">model</span>
-
-    <span class="kt">Input</span> <span class="nv">text</span> <span class="nf">-&gt;</span>
-      <span class="p">{</span> <span class="nv">model</span> <span class="nf">|</span> <span class="nv">inputData</span> <span class="nf">=</span> <span class="nv">text</span> <span class="p">}</span>
-      
-<span class="c1">-- insert your code here</span>
-<span class="nv">boxplotdata</span> <span class="nf">:</span> <span class="kt">String</span> <span class="nf">-&gt;</span> <span class="kt">List</span> <span class="kt">Float</span>
-
-<span class="c1">-- compile-code</span>
+<p>Deze getallen vormen de basis voor het tekenen van de boxplot.</p>
+<p>Als voorbeeld kun je het programma (boxplotdata.elm](<a class="reference external" href="http://goloca.org:443/examples/boxplotdata.elm">http://goloca.org:443/examples/boxplotdata.elm</a>) gebruiken: je voert een lijst met getallen in (gescheiden door komma’s), en krijgt deze 5 getallen als resultaat terug.</p>
+<p>Voor als voorbeeld in: <code class="docutils literal notranslate"><span class="pre">7,3,8,6,8,5,4,5,3,6,2,6,9,1,2,7,5,8,7,6</span></code></p>
+<p>Dit geeft als resultaat: <code class="docutils literal notranslate"><span class="pre">[1,3.5,6,7,9]</span></code></p>
+<p>Voor het bepalen van het kleinste getal, mediaan, enz., begin je met het sorteren van de invoerlijst. Hiervoor kun je de functie <code class="docutils literal notranslate"><span class="pre">List.sort</span></code> gebruiken. (Later kun je je eigen sorteerfunctie maken.)</p>
+<p>Definieer aparte functies voor elk de 5 getallen die je moet berekenen <em>uit deze gesorteerde lijst</em>.
+De functie <code class="docutils literal notranslate"><span class="pre">boxplotdata</span></code> is dan een eenvoudige combinatie van deze functies (zie verderop).</p>
+<p>Je kunt gebruik maken van de volgende functies:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="kn">import </span><span class="nc">List</span> <span class="nv">exposing</span> <span class="p">(</span><span class="nv">take</span><span class="p">,</span> <span class="nv">drop</span><span class="p">,</span> <span class="nv">length</span><span class="p">,</span> <span class="nv">reverse</span><span class="p">,</span> <span class="nv">minimum</span><span class="p">,</span> <span class="nv">maximum</span><span class="p">,</span> <span class="nv">sort</span><span class="p">,</span> <span class="nv">map</span><span class="p">,</span> <span class="nv">head</span><span class="p">,</span> <span class="nv">tail</span><span class="p">)</span>
+<span class="kn">import </span><span class="nc">Maybe</span> <span class="nv">exposing</span> <span class="p">(</span><span class="nv">withDefault</span><span class="p">)</span>
 </pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>
+</pre></div>
+</div>
+</div>
+</div>
+<p>We gebruiken hier de voorbeeld-data die je hierboven gezien hebt.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">data</span> <span class="nf">=</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[7,3,8,6,8,5,4,5,3,6,2,6,9,1,2,7,5,8,7,6]
+    : List number
+</pre></div>
+</div>
+</div>
+</div>
+<p>Als eerste stap maken we daarvan een gesorteerde lijst</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">sortData</span> <span class="nf">=</span> <span class="kt">List</span><span class="nf">.</span><span class="nv">sort</span> <span class="nv">data</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1,2,2,3,3,4,5,5,5,6,6,6,6,7,7,7,8,8,8,9]
+    : List number
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>kleinste:</strong> het kleinste getal van de lijst is het eerste getal in de gesorteerde lijst. Als de lijst leeg is, neem je 0 als resultaat.</p>
+<p><em>Opmerking.</em> De functie <code class="docutils literal notranslate"><span class="pre">List.head</span></code> levert een resultaat op van type <code class="docutils literal notranslate"><span class="pre">Maybe</span></code>, omdat de lijst ook leeg kan zijn. De uitdrukking <code class="docutils literal notranslate"><span class="pre">Maybe.withDefault</span> <span class="pre">0</span> <span class="pre">x</span></code> levert een getal op: 0 als de maybe-waarde <code class="docutils literal notranslate"><span class="pre">x</span></code> gelijk is aan <code class="docutils literal notranslate"><span class="pre">Nothing</span></code>.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">first</span> <span class="nf">:</span> <span class="kt">List</span> <span class="kt">Float</span> <span class="nf">-&gt;</span> <span class="kt">Float</span>
+<span class="nv">first</span> <span class="nv">lst</span> <span class="nf">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : List Float -&gt; Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">first</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">kleinste</span> <span class="nf">=</span> <span class="nv">first</span> <span class="nv">sortData</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>grootste:</strong> het grootste getal is het laatste van de gesorteerde lijst - ofwel, het eerste van de <code class="docutils literal notranslate"><span class="pre">reverse</span></code> van deze gesorteerde lijst. (Gebruik <code class="docutils literal notranslate"><span class="pre">List.reverse</span></code>).</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">last</span> <span class="nf">:</span> <span class="kt">List</span> <span class="kt">Float</span> <span class="nf">-&gt;</span> <span class="kt">Float</span>
+<span class="nv">last</span> <span class="nv">lst</span> <span class="nf">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : List Float -&gt; Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">last</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">grootste</span> <span class="nf">=</span> <span class="nv">last</span> <span class="nv">sortData</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>mediaan.</strong> De <em>mediaan</em> van een reeks getallen is het “middelste” getal naar waarde: het aantal getallen kleiner of gelijk aan de mediaan is gelijk aan het aantal getallen groter of gelijk aan de mediaan.</p>
+<p>Als de lijst getallen geordend (gesorteerd) is, en uit een oneven aantal getallen bestaat, dan is de mediaan het middelste getal. Voor een even aantal getallen is de mediaan het <em>gemiddelde</em> van beide middelste getallen: <span class="math notranslate nohighlight">\((m1 + m2)~/~2\)</span></p>
+<p>Met behulp van de List-functies <code class="docutils literal notranslate"><span class="pre">take</span></code> en <code class="docutils literal notranslate"><span class="pre">drop</span></code> kun je een lijst eenvoudig in twee delen splitsen. Voorbeeld:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">take</span> <span class="mi">2</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[1,2] : List number
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">drop</span> <span class="mi">2</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[3,4] : List number
+</pre></div>
+</div>
+</div>
+</div>
+<p>Het gemiddelde van het laatste element van de eerste lijst en het eerste element van de tweede lijst is de mediaan:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">((</span><span class="nv">last</span> <span class="p">(</span><span class="nv">take</span> <span class="mi">2</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]))</span> <span class="nf">+</span> <span class="p">(</span><span class="nv">first</span> <span class="p">(</span><span class="nv">drop</span> <span class="mi">2</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">])))</span> <span class="nf">/</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<p>Voor het splitsen van een lijst getallen in twee (bijna) gelijke helften gebruik je, in combinatie make <code class="docutils literal notranslate"><span class="pre">take</span></code> en <code class="docutils literal notranslate"><span class="pre">drop</span></code>, de geheeltallige deling <code class="docutils literal notranslate"><span class="pre">//</span></code>.</p>
+<p>De deling <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">//</span> <span class="pre">2</span></code> geeft het resultaat van de geheeltallige deling door 2:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="mi">4</span> <span class="nf">//</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2 : Int
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="mi">5</span> <span class="nf">//</span> <span class="mi">2</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2 : Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>De rest na deling wordt gegeven door de <code class="docutils literal notranslate"><span class="pre">modBy</span></code>-functie. Hiermee kun je nagaan of een getal even of oneven is:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">modBy</span> <span class="mi">2</span> <span class="mi">4</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Int
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">modBy</span> <span class="mi">2</span> <span class="mi">5</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>1 : Int
+</pre></div>
+</div>
+</div>
+</div>
+<p>Op basis hiervan kun je nu de mediaan definiëren:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">median</span> <span class="nf">:</span> <span class="kt">List</span> <span class="kt">Float</span> <span class="nf">-&gt;</span> <span class="kt">Float</span>
+<span class="nv">median</span> <span class="nv">lst</span> <span class="nf">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : List Float -&gt; Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">median</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">median</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<p>Controleer of deze functie ook werkt voor randgevallen zoals de lege lijst, of een lijst met 1 element.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">median</span> <span class="p">[]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">median</span> <span class="p">[</span><span class="mi">1</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">mediaan</span> <span class="nf">=</span> <span class="nv">median</span> <span class="nv">sortData</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>kwartiel1, kwartiel3.</strong> De eerste en derde kwartielen kun je nu uitrekenen als de mediaan van de eerste helft en de mediaan van de tweede helft van de geordende lijst. Als deze lijst een oneven lengte heeft, neem dan steeds de grootste helft voor het nemen van de kwartiel-mediaan.</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">q1</span> <span class="nf">:</span> <span class="kt">List</span> <span class="kt">Float</span> <span class="nf">-&gt;</span> <span class="kt">Float</span>
+<span class="nv">q1</span> <span class="nv">lst</span> <span class="nf">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : List Float -&gt; Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">q1</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">kwartiel1</span> <span class="nf">=</span> <span class="nv">q1</span> <span class="nv">sortData</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">q3</span> <span class="nf">:</span> <span class="kt">List</span> <span class="kt">Float</span> <span class="nf">-&gt;</span> <span class="kt">Float</span>
+<span class="nv">q3</span> <span class="nv">lst</span> <span class="nf">=</span> <span class="mi">0</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : List Float -&gt; Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">q3</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">kwartiel3</span> <span class="nf">=</span> <span class="nv">q3</span> <span class="nv">sortData</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>0 : Float
+</pre></div>
+</div>
+</div>
+</div>
+<p>Vergelijk het onderstaande lijst met het resultaat van het gegeven programma:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="p">[</span><span class="nv">kleinste</span><span class="p">,</span> <span class="nv">kwartiel1</span><span class="p">,</span> <span class="nv">mediaan</span><span class="p">,</span> <span class="nv">kwartiel3</span><span class="p">,</span> <span class="nv">grootste</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0,0,0,0,0] : List Float
+</pre></div>
+</div>
+</div>
+</div>
+<p><strong>boxplotdata.</strong> De functie <code class="docutils literal notranslate"><span class="pre">boxplotdata</span></code> zorgt voor het sorteren van de lijst, en combineert vervolgens de functies die je gemaakt hebt tot een lijst:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">boxplotdata</span> <span class="nv">lst</span> <span class="nf">=</span>
+  <span class="kr">let</span> <span class="nv">sortlst</span> <span class="nf">=</span> <span class="nv">sort</span> <span class="nv">lst</span>
+  <span class="kr">in</span>
+    <span class="p">[</span><span class="nv">first</span> <span class="nv">sortlst</span><span class="p">,</span> <span class="nv">q1</span> <span class="nv">sortlst</span><span class="p">,</span> <span class="nv">median</span> <span class="nv">sortlst</span><span class="p">,</span> <span class="nv">q3</span> <span class="nv">sortlst</span><span class="p">,</span> <span class="nv">last</span> <span class="nv">sortlst</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span><span class=" -Color -Color-Cyan">&lt;function&gt;</span> : List Float -&gt; List Float
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">boxplotdata</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0,0,0,0,0] : List Float
+</pre></div>
+</div>
+</div>
+</div>
+<p>Hieronder zie je het resultaat van <code class="docutils literal notranslate"><span class="pre">boxplotdata</span></code> met de eerder gegeven testdata. Controleer het resultaat:</p>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-elm notranslate"><div class="highlight"><pre><span></span><span class="nv">boxplotdata</span> <span class="p">[</span><span class="mi">7</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">4</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">3</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">6</span><span class="p">,</span><span class="mi">9</span><span class="p">,</span><span class="mi">1</span><span class="p">,</span><span class="mi">2</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">5</span><span class="p">,</span><span class="mi">8</span><span class="p">,</span><span class="mi">7</span><span class="p">,</span><span class="mi">6</span><span class="p">]</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[0,0,0,0,0] : List Float
+</pre></div>
+</div>
+</div>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -405,28 +822,50 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "elmreplkernel"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "elmreplkernel",
             path: "./4_Toepassingen"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'elmreplkernel'</script>
 
               </div>
               
         
-        <div class='prev-next-bottom'>
             
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="boxplot.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Boxplot tekenen</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="myboxplotdraw.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Boxplotdraw</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

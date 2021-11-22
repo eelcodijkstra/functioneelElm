@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../../_static/mystnb.css" />
@@ -42,7 +42,7 @@
     <script src="../../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -72,18 +72,19 @@
     <a class="navbar-brand text-wrap" href="../../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Functioneel Elm</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../intro.html">
-   Functioneel programmeren - in Elm
+   Module Functioneel Programmeren
   </a>
  </li>
 </ul>
@@ -105,7 +106,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../1_Inleiding/3_Programmeerparadigmas.html">
-   1.3 Programmeer paradigma’s
+   1.3 Programmeerparadigma’s
   </a>
  </li>
  <li class="toctree-l1">
@@ -121,8 +122,13 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../../2_Recursie/1_Inleiding.html">
+  <a class="reference internal" href="../../2_Recursie/Recursie.html">
    2 Recursie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../2_Recursie/1_Inleiding.html">
+   2.1 Inleiding recursie
   </a>
  </li>
  <li class="toctree-l1">
@@ -132,7 +138,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../../2_Recursie/3_Oefenopgaven.html">
-   2.3.1 Vermenigvuldigen
+   2.3 Oefenopgaven
   </a>
  </li>
 </ul>
@@ -176,7 +182,93 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../../4_Toepassingen/introductie.html">
-   Introductie
+   Elm toepassingen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../4_Toepassingen/elm-programmas.html">
+   Elm programma’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../4_Toepassingen/havo2018-natuurkunde-repl.html">
+   Havo-examen natuurkunde 2018
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../4_Toepassingen/polynoom.html">
+   Polynomen tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/poly-functions.html">
+     De polynoom-functies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/funcpoints.html">
+     Lijst met functiepunten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/poly-draw.html">
+     Polynoom-tekenprogramma
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../../4_Toepassingen/boxplot.html">
+   Boxplot tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/myboxplotdata.html">
+     Functie boxplotdata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/myboxplotdraw.html">
+     Boxplotdraw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../../4_Toepassingen/mymergesort.html">
+     Mergesort
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../4_Toepassingen/ijskristallen.html">
+   IJskristallen
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../Bronnenlijst.html">
+   Bronnenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../../hoe-gebruik-je-jupyter.html">
+   Hoe gebruik je Jupyter?
   </a>
  </li>
 </ul>
@@ -281,19 +373,12 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#lijsten-creeren">
    3.3.1 Lijsten creëren
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#en-tel-er-2-bij-op">
-     En tel er 2 bij op…
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#list-map-functie">
@@ -304,18 +389,6 @@
   <a class="reference internal nav-link" href="#list-filter">
    3.3.3 List.filter
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#een-uitdaging-even-oneven-en-deling">
-     Een uitdaging: Even, Oneven en Deling
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#probeer-zelf">
-     Probeer zelf:
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#list-foldl">
@@ -352,7 +425,7 @@
         
               <div>
                 
-  <div class="section" id="intro-lists">
+  <div class="tex2jax_ignore mathjax_ignore section" id="intro-lists">
 <h1>3.3 Intro Lists<a class="headerlink" href="#intro-lists" title="Permalink to this headline">¶</a></h1>
 <p>Run de volgende cel:</p>
 <div class="cell docutils container">
@@ -529,8 +602,7 @@ List verlengen.</p>
 </div>
 </div>
 <p>Als je er even over nadenkt zie je wellicht dat een List in essentie 2 verschillende vormen kan hebben: het is óf een lege List óf het is een element (‘head’ genaamd) gevolgd door een List (die ook weer leeg kan zijn óf bestaat uit een head en een List (de tail, die ook weer leeg kan zijn óf … enzovoort)).</p>
-<div class="section" id="en-tel-er-2-bij-op">
-<h3>En tel er 2 bij op…<a class="headerlink" href="#en-tel-er-2-bij-op" title="Permalink to this headline">¶</a></h3>
+<p><strong>En tel er 2 bij op…</strong></p>
 <p>Het leuke van Lists is dat je er berekeningen op kunt gaan toepassen. Stel
 we willen bij elk getal in de List het getal 2 optellen. We mappen dan de
 functie telTweeOpBij op elk getal uit de List:
@@ -596,7 +668,6 @@ als:</p>
 </div>
 </div>
 </div>
-</div>
 <div class="section" id="list-map-functie">
 <h2>3.3.2 List.map functie<a class="headerlink" href="#list-map-functie" title="Permalink to this headline">¶</a></h2>
 <p>Met behulp van de map (List.map) kunnen we dus een functie toepassen op
@@ -643,8 +714,7 @@ op een element van de list) true of false teruggeeft.</p>
 </div>
 <p>dan wordt er dus een list opgebouwd uit die elementen uit de range 1 tot en
 met 30 die groter zijn dan 5.</p>
-<div class="section" id="een-uitdaging-even-oneven-en-deling">
-<h3>Een uitdaging: Even, Oneven en Deling<a class="headerlink" href="#een-uitdaging-even-oneven-en-deling" title="Permalink to this headline">¶</a></h3>
+<p>** Een uitdaging: Even, Oneven en Deling**</p>
 <p>Een voorbeeld: stel we willen alle oneven getallen van 1 tot 1000 opsommen. Een manier om dit te doen is de <code class="docutils literal notranslate"><span class="pre">list</span></code> te nemen van getallen van 1 tot 1000 en dan te filteren of een getal even of oneven is.
 Om te kijken of een getal even of oneven is delen we het door 2 (deling van gehele getallen, dat wil zeggen geen komma-getallen).</p>
 <p>In de informatica bestaan er 2 soorten deling: de <code class="docutils literal notranslate"><span class="pre">gewone</span> <span class="pre">deling</span></code> zoals je deze meestal tegenkomt (met breuken of kommagetallen; alsof je pizza’s verdeelt) en de <code class="docutils literal notranslate"><span class="pre">integer</span> <span class="pre">deling</span></code> (alleen gehele getallen; alsof je snoepjes verdeelt):</p>
@@ -744,14 +814,11 @@ Komt eruit wat je verwacht?</p>
 </div>
 <p>Terug naar de uitdaging: We wilden alle oneven getallen van 1 tot 1000 opsommen. We laten nu alle getallen van 1 tot 1000 opsommen en gebruiken dan <code class="docutils literal notranslate"><span class="pre">List.filter</span></code> om de even getallen er uit te filteren zodat alleen de oneven getallen overblijven:</p>
 <p>List.filter isOdd ( List.range 1 1000 )</p>
-</div>
-<div class="section" id="probeer-zelf">
-<h3>Probeer zelf:<a class="headerlink" href="#probeer-zelf" title="Permalink to this headline">¶</a></h3>
+<p><strong>Probeer zelf:</strong></p>
 <p>Hoe krijg ik met behulp van List.map en/of List.filter van de getallen van 1
 tot en met 60 die kwadraten die groter zijn dan 28?</p>
 <div class="highlight-elm notranslate"><div class="highlight"><pre><span></span>
 </pre></div>
-</div>
 </div>
 </div>
 <div class="section" id="list-foldl">
@@ -947,16 +1014,36 @@ op een bepaalde plek terecht komt. De getallen komen op veel plekken terug.</p>
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="../2_Functie/2_elm-functie-definitie.html" title="previous page">3.2 Functiedefinitie in Elm</a>
-    <a class='right-next' id="next-link" href="../4_Recursie/4_recursie-in-elm.html" title="next page">3.4 Recursie in elm</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="../2_Functie/2_elm-functie-definitie.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">3.2 Functiedefinitie in Elm</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="../4_Recursie/4_recursie-in-elm.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">3.4 Recursie in elm</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

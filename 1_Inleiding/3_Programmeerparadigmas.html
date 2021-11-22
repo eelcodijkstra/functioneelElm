@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>1.3 Programmeer paradigma’s &#8212; Functioneel Elm</title>
+    <title>1.3 Programmeerparadigma’s &#8212; Functioneel Elm</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,7 +42,7 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -72,18 +72,19 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Functioneel Elm</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Functioneel programmeren - in Elm
+   Module Functioneel Programmeren
   </a>
  </li>
 </ul>
@@ -105,7 +106,7 @@
  </li>
  <li class="toctree-l1 current active">
   <a class="current reference internal" href="#">
-   1.3 Programmeer paradigma’s
+   1.3 Programmeerparadigma’s
   </a>
  </li>
  <li class="toctree-l1">
@@ -121,8 +122,13 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+  <a class="reference internal" href="../2_Recursie/Recursie.html">
    2 Recursie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+   2.1 Inleiding recursie
   </a>
  </li>
  <li class="toctree-l1">
@@ -132,7 +138,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../2_Recursie/3_Oefenopgaven.html">
-   2.3.1 Vermenigvuldigen
+   2.3 Oefenopgaven
   </a>
  </li>
 </ul>
@@ -176,7 +182,93 @@
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../4_Toepassingen/introductie.html">
-   Introductie
+   Elm toepassingen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../4_Toepassingen/elm-programmas.html">
+   Elm programma’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../4_Toepassingen/havo2018-natuurkunde-repl.html">
+   Havo-examen natuurkunde 2018
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../4_Toepassingen/polynoom.html">
+   Polynomen tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_Toepassingen/poly-functions.html">
+     De polynoom-functies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_Toepassingen/funcpoints.html">
+     Lijst met functiepunten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_Toepassingen/poly-draw.html">
+     Polynoom-tekenprogramma
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../4_Toepassingen/boxplot.html">
+   Boxplot tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_Toepassingen/myboxplotdata.html">
+     Functie boxplotdata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_Toepassingen/myboxplotdraw.html">
+     Boxplotdraw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../4_Toepassingen/mymergesort.html">
+     Mergesort
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../4_Toepassingen/ijskristallen.html">
+   IJskristallen
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Bronnenlijst.html">
+   Bronnenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hoe-gebruik-je-jupyter.html">
+   Hoe gebruik je Jupyter?
   </a>
  </li>
 </ul>
@@ -264,7 +356,7 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#imperatief-vs-declaratief-programmeren">
@@ -365,12 +457,12 @@
     <ul class="nav section-nav flex-column">
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#functioneel-programmeren">
-       1.3.1.2.1	Functioneel programmeren
+       1.3.1.2.1 Functioneel programmeren
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
       <a class="reference internal nav-link" href="#logisch-programmeren">
-       1.3.1.2.2	Logisch programmeren
+       1.3.1.2.2 Logisch programmeren
       </a>
      </li>
      <li class="toc-h4 nav-item toc-entry">
@@ -393,8 +485,8 @@
         
               <div>
                 
-  <div class="section" id="programmeer-paradigma-s">
-<h1>1.3 Programmeer paradigma’s<a class="headerlink" href="#programmeer-paradigma-s" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="programmeerparadigma-s">
+<h1>1.3 Programmeerparadigma’s<a class="headerlink" href="#programmeerparadigma-s" title="Permalink to this headline">¶</a></h1>
 <p>In het vorige hoofdstuk werd verteld dat er vaak verschillende manieren zijn om een probleem op te lossen. Bij de ene manier zal er wezenlijk anders worden gewerkt dan bij een andere manier. Een zienswijze die bepalend is voor de manier waarop het probleem wordt opgelost werd hierbij aangeduid als een paradigma.</p>
 <p>Ook bij het ontwikkelen van software is het mogelijk om op totaal verschillende manieren te werken aan een gewenste oplossing. De manier waarop de voorgelegde problematiek wordt benaderd en de manier waarop van hieruit gewerkt gaat worden aan een gewenste oplossing, wordt eveneens een paradigma genoemd. De keuze voor de ontwikkelomgeving waarmee een oplossing gerealiseerd zal gaan worden hangt af van het gekozen paradigma.</p>
 <p>In het eerste hoofdstuk werd genoemd dat het mogelijk is om programmeertalen te onderscheiden in generaties. Een andere, zinvolle, onderverdeling in programmeertalen is een verdeling in programmeerparadigma’s. Een onderverdeling van programmeertalen in paradigma’s helpt bij de keuze van een ontwikkelomgeving; wanneer je hebt besloten volgens welk paradigma je een softwareoplossing gaat ontwikkelen, kan je een geschikte ontwikkelomgeving selecteren. Om een bruikbare indeling te kunnen maken wordt onderscheid gemaakt in een aantal standaard programmeer paradigma’s. In deze syllabus worden de belangrijkste paradigma’s benoemd. Bij ieder paradigma wordt in het kort besproken wat de kenmerkende karakteristieken zijn. Tenslotte wordt ingezoomd op één van de paradigma’s.</p>
@@ -572,7 +664,7 @@ Objecten van een associatieklasse kunnen ook weer relaties hebben met andere obj
 <div class="section" id="werkopdracht">
 <h4>Werkopdracht<a class="headerlink" href="#werkopdracht" title="Permalink to this headline">¶</a></h4>
 <blockquote>
-<div><p>Noem voorbeelden van de begrippen uit het object georiënteerd programmeren die te maken hebben met een pretpark (zoals Walibi of de Efteling). Geen voorbeelden van:</p>
+<div><p>Noem voorbeelden van de begrippen uit het object georiënteerd programmeren die te maken hebben met een pretpark (zoals Walibi of de Efteling). Geef voorbeelden van:</p>
 </div></blockquote>
 <ul class="simple">
 <li><p>Objecten</p></li>
@@ -595,7 +687,7 @@ Objecten van een associatieklasse kunnen ook weer relaties hebben met andere obj
 <p>Een imperatieve programmeertaal bestaat dus uit opdrachten die in een bepaalde volgorde door de computer moeten worden uitgevoerd. Een imperatieve programmeertaal beschrijft dus wat er moet gebeuren. Een totaal andere manier van programmeren is het declaratief programmeren. In plaats van te beschrijven wat er moet gebeuren, wordt in declaratieve programmeertalen beschreven wat er aan de hand is; de bouwstenen van een declaratieve taal zijn geen opdrachten maar beschrijvingen en mogelijk samengestelde beschrijvingen.</p>
 <p>Illustratief voor het verschil tussen imperatief en declaratief programmeren is hoe je een leerling naar een lokaal ergens in het schoolgebouw laat gaan. Een imperatieve aanpak zou bijvoorbeeld kunnen zijn: “loop net zolang vooruit totdat je door de klapdeuren bent, sla dan linksaf, loop door tot het einde van de gang, sla rechtsaf, loop door tot de derde deur aan je linkerhand”. Een manier om het declaratief te doen is: je geeft de leerling een plattegrond van het gebouw. Je wijst op het kaartje aan waar de leerling staat en je laat zien waar het lokaal is.</p>
 <div class="section" id="functioneel-programmeren">
-<h4>1.3.1.2.1	Functioneel programmeren<a class="headerlink" href="#functioneel-programmeren" title="Permalink to this headline">¶</a></h4>
+<h4>1.3.1.2.1 Functioneel programmeren<a class="headerlink" href="#functioneel-programmeren" title="Permalink to this headline">¶</a></h4>
 <p>Bij functioneel programmeren draait het om de definitie van functies waar mogelijk een resultaatwaarde aan wordt toegekend. Welke waarde als resultaat wordt teruggegeven hangt veelal af van één of meerdere condities.</p>
 <p>Een groot verschil met imperatieve programmeertalen is het werken met variabelen. Bij een imperatieve programmeertaal is een variabele ‘een doosje waar je iets in kunt stoppen’. In een functionele programmeertaal is een variabele eerder een label dat je geeft aan een bepaalde waarde.</p>
 <p>Kenmerkend voor functionele programmeertalen is het ontbreken van een herhaal constructie. In plaats daarvan wordt voor het meerdere keren uitvoeren van bepaalde opdrachten een ander mechanisme gebruikt: recursie. Het idee van recursie is dat een functie zichzelf kan aanroepen. Verderop in deze module (direct na dit inleidende hoofdstuk over paradigma’s) wordt de techniek van recursie nader besproken.</p>
@@ -603,58 +695,58 @@ Objecten van een associatieklasse kunnen ook weer relaties hebben met andere obj
 <p>Later in deze module wordt nog uitgebreid aandacht besteed aan het functioneel programmeren. Hierbij wordt gebruik gemaakt van de programmeertaal ELM.</p>
 </div>
 <div class="section" id="logisch-programmeren">
-<h4>1.3.1.2.2	Logisch programmeren<a class="headerlink" href="#logisch-programmeren" title="Permalink to this headline">¶</a></h4>
+<h4>1.3.1.2.2 Logisch programmeren<a class="headerlink" href="#logisch-programmeren" title="Permalink to this headline">¶</a></h4>
 <p>Een ander declaratief paradigma is het logisch programmeren. In functionele programmeertalen draait het om definities van functies. Binnen de logische programmeertalen gaat het om het definiëren van relaties, om feiten en regels die gelden binnen een bepaald probleemgebied. Het volgende voorbeeld geeft wellicht een indruk van wat hiermee wordt bedoeld:</p>
 <p>Stel er is van een verzameling mensen gegeven wie de ouders zijn van iemand. Dit zijn de geregistreerde feiten:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">parent</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span><span class="n">sjoerd</span><span class="p">)</span>             <span class="n">parent</span><span class="p">(</span><span class="n">andre</span><span class="p">,</span> <span class="n">charlotte</span><span class="p">)</span><span class="o">.</span>                 <span class="n">parent</span><span class="p">(</span><span class="n">martijn</span><span class="p">,</span> <span class="n">stefan</span><span class="p">)</span><span class="o">.</span> 
-    <span class="n">parent</span><span class="p">(</span><span class="n">adriaan</span><span class="p">,</span> <span class="n">sjoerd</span><span class="p">)</span><span class="o">.</span>         <span class="n">parent</span><span class="p">(</span><span class="n">anette</span><span class="p">,</span> <span class="n">charlotte</span><span class="p">)</span><span class="o">.</span>                <span class="n">parent</span><span class="p">(</span><span class="n">barend</span><span class="p">,</span> <span class="n">stefan</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">parent</span><span class="p">(</span><span class="n">marjel</span><span class="p">,</span> <span class="n">sjoerd</span><span class="p">)</span><span class="o">.</span>          <span class="n">parent</span><span class="p">(</span><span class="n">nynke</span><span class="p">,</span> <span class="n">charlotte</span><span class="p">)</span><span class="o">.</span>                 <span class="n">parent</span><span class="p">(</span><span class="n">martijn</span><span class="p">,</span> <span class="n">loes</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">parent</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span><span class="n">irene</span><span class="p">)</span><span class="o">.</span>             <span class="n">parent</span><span class="p">(</span><span class="n">andre</span><span class="p">,</span> <span class="n">johan</span><span class="p">)</span><span class="o">.</span>                     <span class="n">parent</span><span class="p">(</span><span class="n">barend</span><span class="p">,</span> <span class="n">loes</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">parent</span><span class="p">(</span><span class="n">adriaan</span><span class="p">,</span> <span class="n">irene</span><span class="p">)</span><span class="o">.</span>          <span class="n">parent</span><span class="p">(</span><span class="n">anette</span><span class="p">,</span> <span class="n">johan</span><span class="p">)</span><span class="o">.</span>                    <span class="n">parent</span><span class="p">(</span><span class="n">loes</span><span class="p">,</span> <span class="n">monique</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">parent</span><span class="p">(</span><span class="n">marjel</span><span class="p">,</span> <span class="n">irene</span><span class="p">)</span><span class="o">.</span>           <span class="n">parent</span><span class="p">(</span><span class="n">nynke</span><span class="p">,</span> <span class="n">johan</span><span class="p">)</span><span class="o">.</span>                     <span class="n">parent</span><span class="p">(</span><span class="n">loes</span><span class="p">,</span> <span class="n">dennis</span><span class="p">)</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">parent</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span><span class="n">sjoerd</span><span class="p">)</span>             <span class="n">parent</span><span class="p">(</span><span class="n">andre</span><span class="p">,</span> <span class="n">charlotte</span><span class="p">)</span><span class="o">.</span>                 <span class="n">parent</span><span class="p">(</span><span class="n">martijn</span><span class="p">,</span> <span class="n">stefan</span><span class="p">)</span><span class="o">.</span> 
+  <span class="n">parent</span><span class="p">(</span><span class="n">adriaan</span><span class="p">,</span> <span class="n">sjoerd</span><span class="p">)</span><span class="o">.</span>         <span class="n">parent</span><span class="p">(</span><span class="n">anette</span><span class="p">,</span> <span class="n">charlotte</span><span class="p">)</span><span class="o">.</span>                <span class="n">parent</span><span class="p">(</span><span class="n">barend</span><span class="p">,</span> <span class="n">stefan</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">parent</span><span class="p">(</span><span class="n">marjel</span><span class="p">,</span> <span class="n">sjoerd</span><span class="p">)</span><span class="o">.</span>          <span class="n">parent</span><span class="p">(</span><span class="n">nynke</span><span class="p">,</span> <span class="n">charlotte</span><span class="p">)</span><span class="o">.</span>                 <span class="n">parent</span><span class="p">(</span><span class="n">martijn</span><span class="p">,</span> <span class="n">loes</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">parent</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span><span class="n">irene</span><span class="p">)</span><span class="o">.</span>             <span class="n">parent</span><span class="p">(</span><span class="n">andre</span><span class="p">,</span> <span class="n">johan</span><span class="p">)</span><span class="o">.</span>                     <span class="n">parent</span><span class="p">(</span><span class="n">barend</span><span class="p">,</span> <span class="n">loes</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">parent</span><span class="p">(</span><span class="n">adriaan</span><span class="p">,</span> <span class="n">irene</span><span class="p">)</span><span class="o">.</span>          <span class="n">parent</span><span class="p">(</span><span class="n">anette</span><span class="p">,</span> <span class="n">johan</span><span class="p">)</span><span class="o">.</span>                    <span class="n">parent</span><span class="p">(</span><span class="n">loes</span><span class="p">,</span> <span class="n">monique</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">parent</span><span class="p">(</span><span class="n">marjel</span><span class="p">,</span> <span class="n">irene</span><span class="p">)</span><span class="o">.</span>           <span class="n">parent</span><span class="p">(</span><span class="n">nynke</span><span class="p">,</span> <span class="n">johan</span><span class="p">)</span><span class="o">.</span>                     <span class="n">parent</span><span class="p">(</span><span class="n">loes</span><span class="p">,</span> <span class="n">dennis</span><span class="p">)</span><span class="o">.</span>
                                      <span class="n">parent</span><span class="p">(</span><span class="n">charlotte</span><span class="p">,</span> <span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">parent</span><span class="p">(</span><span class="n">sjoerd</span><span class="p">,</span> <span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">parent</span><span class="p">(</span><span class="n">irene</span><span class="p">,</span> <span class="n">monique</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">parent</span><span class="p">(</span><span class="n">irene</span><span class="p">,</span> <span class="n">dennis</span><span class="p">)</span><span class="o">.</span>	
+  <span class="n">parent</span><span class="p">(</span><span class="n">sjoerd</span><span class="p">,</span> <span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">parent</span><span class="p">(</span><span class="n">irene</span><span class="p">,</span> <span class="n">monique</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">parent</span><span class="p">(</span><span class="n">irene</span><span class="p">,</span> <span class="n">dennis</span><span class="p">)</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>Verder zijn als feiten gegeven of iemand man of vrouw is:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">man</span><span class="p">(</span><span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>                    <span class="n">man</span><span class="p">(</span><span class="n">andre</span><span class="p">)</span><span class="o">.</span>                              <span class="n">man</span><span class="p">(</span><span class="n">stefan</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">man</span><span class="p">(</span><span class="n">wiebe</span><span class="p">)</span><span class="o">.</span>                      <span class="n">man</span><span class="p">(</span><span class="n">johan</span><span class="p">)</span><span class="o">.</span>                              <span class="n">man</span><span class="p">(</span><span class="n">barend</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">man</span><span class="p">(</span><span class="n">adriaan</span><span class="p">)</span><span class="o">.</span>                    <span class="n">woman</span><span class="p">(</span><span class="n">charlotte</span><span class="p">)</span><span class="o">.</span>                        <span class="n">man</span><span class="p">(</span><span class="n">martijn</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">man</span><span class="p">(</span><span class="n">sjoerd</span><span class="p">)</span><span class="o">.</span>                     <span class="n">woman</span><span class="p">(</span><span class="n">anette</span><span class="p">)</span><span class="o">.</span>                           <span class="n">woman</span><span class="p">(</span><span class="n">loes</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">woman</span><span class="p">(</span><span class="n">marjel</span><span class="p">)</span><span class="o">.</span>                   <span class="n">woman</span><span class="p">(</span><span class="n">nynke</span><span class="p">)</span><span class="o">.</span>                            <span class="n">woman</span><span class="p">(</span><span class="n">monique</span><span class="p">)</span><span class="o">.</span>
-    <span class="n">woman</span><span class="p">(</span><span class="n">irene</span><span class="p">)</span><span class="o">.</span>                                                             <span class="n">man</span><span class="p">(</span><span class="n">dennis</span><span class="p">)</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">man</span><span class="p">(</span><span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>                    <span class="n">man</span><span class="p">(</span><span class="n">andre</span><span class="p">)</span><span class="o">.</span>                              <span class="n">man</span><span class="p">(</span><span class="n">stefan</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">man</span><span class="p">(</span><span class="n">wiebe</span><span class="p">)</span><span class="o">.</span>                      <span class="n">man</span><span class="p">(</span><span class="n">johan</span><span class="p">)</span><span class="o">.</span>                              <span class="n">man</span><span class="p">(</span><span class="n">barend</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">man</span><span class="p">(</span><span class="n">adriaan</span><span class="p">)</span><span class="o">.</span>                    <span class="n">woman</span><span class="p">(</span><span class="n">charlotte</span><span class="p">)</span><span class="o">.</span>                        <span class="n">man</span><span class="p">(</span><span class="n">martijn</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">man</span><span class="p">(</span><span class="n">sjoerd</span><span class="p">)</span><span class="o">.</span>                     <span class="n">woman</span><span class="p">(</span><span class="n">anette</span><span class="p">)</span><span class="o">.</span>                           <span class="n">woman</span><span class="p">(</span><span class="n">loes</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">woman</span><span class="p">(</span><span class="n">marjel</span><span class="p">)</span><span class="o">.</span>                   <span class="n">woman</span><span class="p">(</span><span class="n">nynke</span><span class="p">)</span><span class="o">.</span>                            <span class="n">woman</span><span class="p">(</span><span class="n">monique</span><span class="p">)</span><span class="o">.</span>
+  <span class="n">woman</span><span class="p">(</span><span class="n">irene</span><span class="p">)</span><span class="o">.</span>                                                             <span class="n">man</span><span class="p">(</span><span class="n">dennis</span><span class="p">)</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>Het is in een logische programmeertaal mogelijk om ook relaties te definiëren. In dit geval bijvoorbeeld een vader en een moeder relatie:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	<span class="n">father</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span> <span class="p">:</span><span class="o">-</span> <span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">),</span> <span class="n">man</span> <span class="p">(</span><span class="n">Y</span><span class="p">)</span>
-    <span class="n">mother</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span> <span class="p">:</span><span class="o">-</span> <span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">),</span> <span class="n">woman</span> <span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">father</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span> <span class="p">:</span><span class="o">-</span> <span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">),</span> <span class="n">man</span> <span class="p">(</span><span class="n">Y</span><span class="p">)</span>
+  <span class="n">mother</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">)</span> <span class="p">:</span><span class="o">-</span> <span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">Y</span><span class="p">),</span> <span class="n">woman</span> <span class="p">(</span><span class="n">Y</span><span class="p">)</span>
 </pre></div>
 </div>
 <p>Vragen die nu gesteld kunnen worden zijn:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	<span class="n">parent</span><span class="p">(</span><span class="n">adriaan</span><span class="p">,</span><span class="n">X</span><span class="p">)</span><span class="o">.</span>  <span class="o">%</span>   <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">de</span> <span class="n">ouders</span> <span class="n">van</span> <span class="n">Adriaan</span> <span class="n">getoond</span><span class="o">.</span>
-	<span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">sjoerd</span><span class="p">)</span><span class="o">.</span>   <span class="o">%</span>   <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">de</span> <span class="n">kinderen</span> <span class="n">van</span> <span class="n">Sjoerd</span> <span class="n">getoond</span><span class="o">.</span>
-	<span class="n">father</span><span class="p">(</span><span class="n">adriaan</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span> <span class="o">%</span>   <span class="n">Hiermee</span> <span class="n">wordt</span> <span class="n">getoond</span> <span class="n">wie</span> <span class="n">de</span> <span class="n">vader</span> <span class="ow">is</span> <span class="n">van</span> <span class="n">Adriaan</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">parent</span><span class="p">(</span><span class="n">adriaan</span><span class="p">,</span><span class="n">X</span><span class="p">)</span><span class="o">.</span>  <span class="o">%</span>   <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">de</span> <span class="n">ouders</span> <span class="n">van</span> <span class="n">Adriaan</span> <span class="n">getoond</span><span class="o">.</span>
+  <span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">sjoerd</span><span class="p">)</span><span class="o">.</span>   <span class="o">%</span>   <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">de</span> <span class="n">kinderen</span> <span class="n">van</span> <span class="n">Sjoerd</span> <span class="n">getoond</span><span class="o">.</span>
+  <span class="n">father</span><span class="p">(</span><span class="n">adriaan</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span> <span class="o">%</span>   <span class="n">Hiermee</span> <span class="n">wordt</span> <span class="n">getoond</span> <span class="n">wie</span> <span class="n">de</span> <span class="n">vader</span> <span class="ow">is</span> <span class="n">van</span> <span class="n">Adriaan</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>Het is ook mogelijk om te definiëren wat een voorouder is van iemand:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	<span class="n">ancestor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">):</span><span class="o">-</span> <span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Z</span><span class="p">),</span> <span class="n">ancestor</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="n">Y</span><span class="p">))</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ancestor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">):</span><span class="o">-</span> <span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">parent</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Z</span><span class="p">),</span> <span class="n">ancestor</span><span class="p">(</span><span class="n">Z</span><span class="p">,</span><span class="n">Y</span><span class="p">))</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>Het is hiermee mogelijk om bijvoorbeeld de volgende vragen te stellen:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	<span class="n">ancestor</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span> <span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>        <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">wordt</span> <span class="n">gecontroleerd</span> <span class="n">of</span> <span class="n">Hendrik</span> <span class="n">een</span> <span class="n">voorouder</span> <span class="ow">is</span> <span class="n">van</span> <span class="n">Wiebe</span><span class="o">.</span>
-	<span class="n">ancestor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>            <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">alle</span> <span class="n">nakomelingen</span> <span class="n">van</span> <span class="n">hendrik</span> <span class="n">getoond</span><span class="o">.</span>
-	<span class="n">ancestor</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span>              <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">alle</span> <span class="n">voorouders</span> <span class="n">van</span> <span class="n">Wiebe</span> <span class="n">getoond</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">ancestor</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span> <span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>        <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">wordt</span> <span class="n">gecontroleerd</span> <span class="n">of</span> <span class="n">Hendrik</span> <span class="n">een</span> <span class="n">voorouder</span> <span class="ow">is</span> <span class="n">van</span> <span class="n">Wiebe</span><span class="o">.</span>
+  <span class="n">ancestor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span> <span class="n">hendrik</span><span class="p">)</span><span class="o">.</span>            <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">alle</span> <span class="n">nakomelingen</span> <span class="n">van</span> <span class="n">hendrik</span> <span class="n">getoond</span><span class="o">.</span>
+  <span class="n">ancestor</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span>              <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">alle</span> <span class="n">voorouders</span> <span class="n">van</span> <span class="n">Wiebe</span> <span class="n">getoond</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>Tenslotte definiëren we ook een relatie waarmee wordt aangegeven of twee mensen bloedverwanten zijn van elkaar. Je bent een bloedverwant als je een gemeenschappelijke voorouder hebt, of als de een voorouder is van de ander.</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>    <span class="n">kinsman</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">):</span><span class="o">-</span> <span class="n">ancestor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)</span> <span class="o">|</span> <span class="n">ancestor</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">X</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">ancestor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Z</span><span class="p">),</span><span class="n">ancestor</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">Z</span><span class="p">))</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">kinsman</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">):</span><span class="o">-</span> <span class="n">ancestor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Y</span><span class="p">)</span> <span class="o">|</span> <span class="n">ancestor</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">X</span><span class="p">)</span> <span class="o">|</span> <span class="p">(</span><span class="n">ancestor</span><span class="p">(</span><span class="n">X</span><span class="p">,</span><span class="n">Z</span><span class="p">),</span><span class="n">ancestor</span><span class="p">(</span><span class="n">Y</span><span class="p">,</span><span class="n">Z</span><span class="p">))</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>Vragen die we nu kunnen stellen zijn:</p>
-<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>	<span class="n">kinsman</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span> <span class="n">nynke</span><span class="p">)</span><span class="o">.</span>           <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">wordt</span> <span class="n">gecontroleerd</span> <span class="n">of</span> <span class="n">Wiebe</span> <span class="n">en</span> <span class="n">Nynke</span> <span class="n">bloedverwanten</span> <span class="n">zijn</span> <span class="n">van</span> <span class="n">elkaar</span><span class="o">.</span>
-	<span class="n">kinsman</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span>               <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">alle</span> <span class="n">bloedverwanten</span> <span class="n">van</span> <span class="n">Wiebe</span> <span class="n">getoond</span><span class="o">.</span>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span>  <span class="n">kinsman</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span> <span class="n">nynke</span><span class="p">)</span><span class="o">.</span>           <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">wordt</span> <span class="n">gecontroleerd</span> <span class="n">of</span> <span class="n">Wiebe</span> <span class="n">en</span> <span class="n">Nynke</span> <span class="n">bloedverwanten</span> <span class="n">zijn</span> <span class="n">van</span> <span class="n">elkaar</span><span class="o">.</span>
+  <span class="n">kinsman</span><span class="p">(</span><span class="n">wiebe</span><span class="p">,</span> <span class="n">X</span><span class="p">)</span><span class="o">.</span>               <span class="o">%</span> <span class="n">Hiermee</span> <span class="n">worden</span> <span class="n">alle</span> <span class="n">bloedverwanten</span> <span class="n">van</span> <span class="n">Wiebe</span> <span class="n">getoond</span><span class="o">.</span>
 </pre></div>
 </div>
 <p>Een veel gebruikte logische programmeertaal is Prolog. Ook de vraagtaal SQL is in veel opzichten te beschouwen als een logische programmeertaal. De programmeertaal Curry heeft zowel kenmerken van een functionele als van een logische programmeertaal.</p>
@@ -695,16 +787,36 @@ Objecten van een associatieklasse kunnen ook weer relaties hebben met andere obj
               </div>
               
         
-        <div class='prev-next-bottom'>
             
-    <a class='left-prev' id="prev-link" href="2_Paradigmas.html" title="previous page">1.2 Paradigma’s</a>
-    <a class='right-next' id="next-link" href="4_Overigeparadigmas.html" title="next page">1.4 Overige paradigma’s</a>
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="2_Paradigmas.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">1.2 Paradigma’s</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="4_Overigeparadigmas.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">1.4 Overige paradigma’s</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         

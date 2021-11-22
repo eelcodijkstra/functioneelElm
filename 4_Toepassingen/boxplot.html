@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Wat gaan we maken? &#8212; Functioneel Elm</title>
+    <title>Boxplot tekenen &#8212; Functioneel Elm</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet" />
   <link href="../_static/css/index.c5995385ac14fb8791e8eb36b4908be2.css" rel="stylesheet" />
@@ -23,7 +23,7 @@
 
     
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
-    <link rel="stylesheet" href="../_static/sphinx-book-theme.e8e5499552300ddf5d7adccae7cc3b70.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" type="text/css" />
     <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
     <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
@@ -42,7 +42,7 @@
     <script src="../_static/copybutton.js"></script>
     <script >var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
-    <script async="async" src="https://unpkg.com/thebelab@latest/lib/index.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script >
         const thebe_selector = ".thebe"
         const thebe_selector_input = "pre"
@@ -51,6 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Functie boxplotdata" href="myboxplotdata.html" />
+    <link rel="prev" title="Polynoom-tekenprogramma" href="poly-draw.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
     
@@ -70,18 +72,19 @@
     <a class="navbar-brand text-wrap" href="../index.html">
       
       
+      
       <h1 class="site-logo" id="site-title">Functioneel Elm</h1>
       
     </a>
 </div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
   <i class="icon fas fa-search"></i>
   <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
-</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main navigation">
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
     <div class="bd-toc-item active">
         <ul class="nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="../intro.html">
-   Functioneel programmeren - in Elm
+   Module Functioneel Programmeren
   </a>
  </li>
 </ul>
@@ -103,7 +106,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../1_Inleiding/3_Programmeerparadigmas.html">
-   1.3 Programmeer paradigma’s
+   1.3 Programmeerparadigma’s
   </a>
  </li>
  <li class="toctree-l1">
@@ -119,8 +122,13 @@
 </p>
 <ul class="nav bd-sidenav">
  <li class="toctree-l1">
-  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+  <a class="reference internal" href="../2_Recursie/Recursie.html">
    2 Recursie
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../2_Recursie/1_Inleiding.html">
+   2.1 Inleiding recursie
   </a>
  </li>
  <li class="toctree-l1">
@@ -130,7 +138,7 @@
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../2_Recursie/3_Oefenopgaven.html">
-   2.3.1 Vermenigvuldigen
+   2.3 Oefenopgaven
   </a>
  </li>
 </ul>
@@ -171,10 +179,96 @@
   Toepassingen
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1">
   <a class="reference internal" href="introductie.html">
-   Introductie
+   Elm toepassingen
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="elm-programmas.html">
+   Elm programma’s
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="havo2018-natuurkunde-repl.html">
+   Havo-examen natuurkunde 2018
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="polynoom.html">
+   Polynomen tekenen
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poly-functions.html">
+     De polynoom-functies
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="funcpoints.html">
+     Lijst met functiepunten
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="poly-draw.html">
+     Polynoom-tekenprogramma
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="current reference internal" href="#">
+   Boxplot tekenen
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="myboxplotdata.html">
+     Functie boxplotdata
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="myboxplotdraw.html">
+     Boxplotdraw
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="mymergesort.html">
+     Mergesort
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="ijskristallen.html">
+   IJskristallen
+  </a>
+ </li>
+</ul>
+<p class="caption">
+ <span class="caption-text">
+  Appendix
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../Bronnenlijst.html">
+   Bronnenlijst
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../hoe-gebruik-je-jupyter.html">
+   Hoe gebruik je Jupyter?
   </a>
  </li>
 </ul>
@@ -218,9 +312,9 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/4_Toepassingen/boxplot.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/4_Toepassingen/boxplot.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
-                data-placement="left">.md</button></a>
+                data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
             onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
@@ -254,6 +348,23 @@
 
             <!-- Launch buttons -->
 
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
+    <div class="dropdown-buttons">
+        
+        <a class="binder-button" href="https://mybinder.org/v2/gh/eelcodijkstra/functioneelelm/master?urlpath=tree/notebooks/4_Toepassingen/boxplot.ipynb"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
+                data-placement="left"><img class="binder-button-logo"
+                    src="../_static/images/logo_binder.svg"
+                    alt="Interact on binder">Binder</button></a>
+        
+        
+        
+        
+    </div>
+</div>
+
         </div>
 
         <!-- Table of contents -->
@@ -262,16 +373,21 @@
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
             </div>
-            <nav id="bd-toc-nav">
+            <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#wat-gaan-we-maken">
    Wat gaan we maken?
   </a>
  </li>
- <li class="toc-h1 nav-item toc-entry">
+ <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#hoe-gaan-we-een-boxplot-maken">
    Hoe gaan we een boxplot maken?
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#merge-sort">
+   Merge sort
   </a>
  </li>
 </ul>
@@ -285,24 +401,36 @@
         
               <div>
                 
-  <div class="section" id="wat-gaan-we-maken">
-<h1>Wat gaan we maken?<a class="headerlink" href="#wat-gaan-we-maken" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="boxplot-tekenen">
+<h1>Boxplot tekenen<a class="headerlink" href="#boxplot-tekenen" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="wat-gaan-we-maken">
+<h2>Wat gaan we maken?<a class="headerlink" href="#wat-gaan-we-maken" title="Permalink to this headline">¶</a></h2>
 <p>We gaan een boxplot maken. Als je niet weet wat een boxplot is lees dan de uitleg op:</p>
-<p><a class="reference external" href="http://www.dr-aart.nl/Statistiek-boxplot.html">http://www.dr-aart.nl/Statistiek-boxplot.html</a></p>
-<p>Start het elm programma
-<a class="reference external" href="http://goloca.org:443/examples/boxplotdatadraw.elm">boxplotdatadraw.elm</a>. Je ziet het volgende:</p>
-<p><img alt="elmex1.1.png" src="../_images/elmex1.1.png" /></p>
+<ul class="simple">
+<li><p><a class="reference external" href="http://www.dr-aart.nl/Statistiek-boxplot.html">http://www.dr-aart.nl/Statistiek-boxplot.html</a></p></li>
+</ul>
+<p>Start het elm programma <a class="reference external" href="http://goloca.org:443/examples/boxplotdatadraw.elm">boxplotdraw.elm</a> op. Je ziet het volgende:</p>
+<p><img alt="boxplot-1.png" src="../_images/boxplot-1.png" /></p>
 <p>In het vakje kun je de waardes voor een boxplot invullen. Vul daar de volgende waardes in uit het voorbeeld van Dr. Aart:</p>
-<p><code class="docutils literal notranslate"><span class="pre">7,3,8,6,8,5,4,5,3,6,2,6,9,1,2,7,5,8,7,6</span></code> (Let op zet geen spaties na de komma’s).</p>
+<p>7,3,8,6,8,5,4,5,3,6,2,6,9,1,2,7,5,8,7,6 (Let op: zet geen spaties na de komma’s).</p>
 <p>Je ziet deze boxplot:</p>
-<p><img alt="elmex1.2.png" src="../_images/elmex1.2.png" /></p>
+<p><img alt="boxplot-2" src="../_images/boxplot-2.png" /></p>
 </div>
 <div class="section" id="hoe-gaan-we-een-boxplot-maken">
-<h1>Hoe gaan we een boxplot maken?<a class="headerlink" href="#hoe-gaan-we-een-boxplot-maken" title="Permalink to this headline">¶</a></h1>
+<h2>Hoe gaan we een boxplot maken?<a class="headerlink" href="#hoe-gaan-we-een-boxplot-maken" title="Permalink to this headline">¶</a></h2>
 <p>We gaan het vorige programma in Elm programmeren. Dit doen we met de volgende stappen.</p>
-<p>.1. Maak een recursieve functie <a class="reference internal" href="mymergesort.html"><span class="doc std std-doc">mymergesort</span></a> om de lijst te sorteren.</p>
-<p>.2. Maak functie <a class="reference internal" href="myboxplotdata.html"><span class="doc std std-doc">boxplotdata</span></a> om de gegevens voor een boxplot te bepalen.</p>
-<p>.3. Maak functie <a class="reference internal" href="myboxplotdatadraw.html"><span class="doc std std-doc">myboxplotdatadraw</span></a> om op basis van de gegevens van een boxplot een boxplot te tekenen.</p>
+<ul class="simple">
+<li><p>Maak functie <a class="reference internal" href="myboxplotdata.html"><span class="doc std std-doc">boxplotdata</span></a> om de gegevens voor een boxplot te bepalen;</p></li>
+<li><p>Maak functie <a class="reference internal" href="myboxplotdraw.html"><span class="doc std std-doc">boxplotdraw</span></a> om met deze gegevens de boxplot te tekenen.</p></li>
+</ul>
+</div>
+<div class="section" id="merge-sort">
+<h2>Merge sort<a class="headerlink" href="#merge-sort" title="Permalink to this headline">¶</a></h2>
+<p>Voor het bepalen van de mediaan en de kwartielen moet je de ingevoerde data sorteren, zoals je ziet bij het maken van <code class="docutils literal notranslate"><span class="pre">boxplotdata</span></code>. Je kunt daarvoor de Elm functie <code class="docutils literal notranslate"><span class="pre">sort</span></code> gebruiken, maar je kunt ook je eigen sorteerfunctie maken. Het Merge sort algoritme geeft een efficiënte oplossing.</p>
+<p>In <a class="reference internal" href="mymergesort.html"><span class="doc std std-doc">mergesort notebook</span></a> bestudeer je Merge sort voor het maken van je eigen sorteerfunctie.</p>
+</div>
+<div class="toctree-wrapper compound">
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -314,28 +442,50 @@
         },
         codeMirrorConfig: {
             theme: "abcdef",
-            mode: "python"
+            mode: "elm"
         },
         kernelOptions: {
-            kernelName: "python3",
+            kernelName: "elm",
             path: "./4_Toepassingen"
         },
         predefinedOutput: true
     }
     </script>
-    <script>kernelName = 'python3'</script>
+    <script>kernelName = 'elm'</script>
 
               </div>
               
         
-        <div class='prev-next-bottom'>
             
 
-        </div>
+
+
+<div class='prev-next-bottom'>
+    
+    <div id="prev">
+        <a class="left-prev" href="poly-draw.html" title="previous page">
+            <i class="prevnext-label fas fa-angle-left"></i>
+            <div class="prevnext-info">
+                <p class="prevnext-label">previous</p>
+                <p class="prevnext-title">Polynoom-tekenprogramma</p>
+            </div>
+        </a>
+    </div>
+     <div id="next">
+        <a class="right-next" href="myboxplotdata.html" title="next page">
+            <div class="prevnext-info">
+                <p class="prevnext-label">next</p>
+                <p class="prevnext-title">Functie boxplotdata</p>
+            </div>
+            <i class="prevnext-label fas fa-angle-right"></i>
+        </a>
+     </div>
+
+</div>
         
         </div>
     </div>
-    <footer class="footer mt-5 mt-md-0">
+    <footer class="footer">
     <div class="container">
       <p>
         
